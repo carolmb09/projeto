@@ -1,53 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Império Romano</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elenco do Corinthians</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Império Romano</h1>
-        <nav>
-            <ul>
-                <li><a href="#fundacao">Fundação</a></li>
-                <li><a href="#politica">Política</a></li>
-                <li><a href="#sociedade">Sociedade</a></li>
-                <li><a href="#legado">Legado</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <h1>Elenco do Corinthians</h1>
+      <p class="subtitle">Ficha dos jogadores — busque por nome ou filtre por posição</p>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Buscar jogador..." aria-label="Buscar jogador" />
+        <select id="filter" aria-label="Filtrar por posição">
+          <option value="tudo">Todas as posições</option>
+          <option value="Goleiro">Goleiros</option>
+          <option value="Lateral-esquerdo">Laterais-esquerdo</option>
+          <option value="Lateral-direito">Laterais-direito</option>
+          <option value="Zagueiro">Zagueiros</option>
+          <option value="Volante">Volantes</option>
+          <option value="Meia">Meias</option>
+          <option value="Atacante">Atacantes</option>
+        </select>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section id="fundacao">
-            <h2>Fundação e Expansão</h2>
-            <p>Roma foi fundada segundo a lenda por Rômulo e Remo. Inicialmente uma monarquia, depois tornou-se república e finalmente império.</p>
-        </section>
+  <main class="container">
+    <section id="players-grid" class="grid" aria-live="polite">
+      <!-- Cards serão gerados por script.js -->
+    </section>
+  </main>
 
-        <section id="politica">
-            <h2>Política e Governo</h2>
-            <p>A República Romana tinha Senado e magistrados; depois surgiram imperadores como Júlio César e Augusto.</p>
-        </section>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Dados fornecidos pelo usuário • Site demonstrativo</p>
+    </div>
+  </footer>
 
-        <section id="sociedade">
-            <h2>Sociedade e Cultura</h2>
-            <p>Dividida entre patrícios, plebeus e escravos, a sociedade romana tinha hábitos, religião e arquitetura muito avançados.</p>
-        </section>
-
-        <section id="legado">
-            <h2>Legado</h2>
-            <p>O Império Romano deixou influência no direito, na língua (Latim), na arquitetura e na cultura ocidental.</p>
-        </section>
-
-        <button id="btnMensagem">Clique aqui para saber mais!</button>
-    </main>
-
-    <footer>
-        <p>© 2025 História do Império Romano</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-git
